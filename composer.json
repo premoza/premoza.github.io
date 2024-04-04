@@ -8,6 +8,7 @@
         "components/masonry": "^4.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
+        "laravel/ui": "^4.5",
         "twbs/bootstrap": "^5.3"
     },
     "require-dev": {
