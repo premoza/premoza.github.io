@@ -19,6 +19,14 @@
   composer install
   npm install
   ```
+- create .env
+  ```
+  cp .env.example .env
+  ```
+- generate app key
+  ```
+  php artisan key:generate
+  ```
 - database migration
   ```
   php artisan migrate:refresh
