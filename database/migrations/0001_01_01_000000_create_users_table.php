@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('fullname');
             // form, google, etc..
-            $table->string('login_method');
+            $table->string('login_method')->nullable();
             // active, deactivated
-            $table->string('status');
+            $table->string('status')->nullable();
             // user, developer, admin
-            $table->string('type');
+            $table->string('type')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('contact_number')->nullable();
