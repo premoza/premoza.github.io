@@ -12,12 +12,26 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="fullname" class="col-md-4 col-form-label text-md-end">{{ __('Full Name') }}</label>
+                            <label for="username" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
-                                <input id="fullname" type="text" class="form-control @error('name') is-invalid @enderror" name="fullname" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
 
-                                @error('name')
+                                @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="fullname" class="col-md-4 col-form-label text-md-end">{{ __('Fullname') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="name" autofocus>
+
+                                @error('fullname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -63,12 +77,18 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" name="user" class="btn btn-primary">
+                                <button type="submit" name="type" value="user" class="btn btn-primary">
                                     {{ __('Register as User') }}
                                 </button>
-                                <button type="submit" name="developer" class="btn btn-primary">
+                                <button type="submit" name="type" value="developer" class="btn btn-primary">
                                     {{ __('Register as Developer') }}
                                 </button>
+
+                                @error('type')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                     </form>

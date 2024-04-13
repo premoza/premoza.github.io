@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('status')->nullable();
             // user, developer, admin
             $table->string('type')->nullable();
+            $table->string('username')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('contact_number')->nullable();
