@@ -13,17 +13,39 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $debugEnabled = config('app.debug');
+        if ($debugEnabled) {
+            User::factory(100)->create();
 
-        User::factory()->create([
-            'fullname' => 'Test User',
-            'username' => 'test',
-            'email' => 'test@example.com',
-            'login_method' => 'form',
-            'status' => 'active',
-            'type' => 'user',
-            'contact_number' => '9394660618',
-            'password' => 'df35hh6b4h,.763?'
-        ]);
+            User::create([
+                'first_name' => 'John',
+                'last_name' => 'User',
+                'email' => 'user@example.com',
+                'login_method' => 'form',
+                'status' => 'active',
+                'type' => 'user',
+                'password' => 'user'
+            ]);
+
+            User::create([
+                'first_name' => 'John',
+                'last_name' => 'Developer',
+                'email' => 'developer@example.com',
+                'login_method' => 'form',
+                'status' => 'active',
+                'type' => 'developer',
+                'password' => 'developer'
+            ]);
+
+            User::create([
+                'first_name' => 'John',
+                'last_name' => 'Admin',
+                'email' => 'admin@example.com',
+                'login_method' => 'form',
+                'status' => 'active',
+                'type' => 'admin',
+                'password' => 'admin'
+            ]);
+        }
     }
 }

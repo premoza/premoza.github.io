@@ -6,6 +6,7 @@
         "php": "^8.2",
         "components/font-awesome": "^6.5",
         "components/masonry": "^4.2",
+        "fahlisaputra/laravel-minify": "^1.1",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",

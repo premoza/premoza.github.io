@@ -1,7 +1,22 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-    <div class="container-fluid">
+<div class="wrap bg-primary text-white">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col">
+                <span class="fa fa-phone mx-2"></span> <a class="text-white" href="#">+00 1234 567</a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                    <a class="text-white" href="#"><span class="fa-brands fa-facebook mx-1"><i class="sr-only">Facebook</i></span></a>
+                    <a class="text-white" href="#"><span class="fa-brands fa-github mx-1"><i class="sr-only">Github</i></span></a>
+                    <a class="text-white" href="#"><span class="fa-brands fa-linkedin mx-1"><i class="sr-only">LinkedIn</i></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="/images/premoza-icon-min.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <img src="/assets/premoza/premoza-icon-min.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
             Premoza
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

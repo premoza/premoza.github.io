@@ -17,8 +17,8 @@
     <title>@yield('pageTitle') - Premoza</title>
 
     {{-- Icons --}}
-    <link rel="shortcut icon" href="/images/premoza-icon-min.png">
-    <link rel="apple-touch-icon" href="/images/premoza-icon-min.png">
+    <link rel="shortcut icon" href="/assets/premoza/premoza-icon-min-round.png">
+    <link rel="apple-touch-icon" href="/assets/premoza/premoza-icon-min-round.png">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     {{-- OpenGraph --}}

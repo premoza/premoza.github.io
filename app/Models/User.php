@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends Premoza
 {
     use HasFactory, Notifiable;
 
@@ -17,14 +17,13 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'fullname',
-        'username',
+        'first_name',
+        'last_name',
+        'login_method',
+        'status',
+        'type',
         'email',
-        'password',
-        'contact_number',
-        'dateofbirth',
-        'address',
-        'gender'
+        'password'
     ];
 
     /**
@@ -46,7 +45,6 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            'contact_number_at' => 'datetime',
             'password' => 'hashed',
         ];
     }
