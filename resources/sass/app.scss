@@ -1,8 +1,25 @@
-// Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
-// Variables
 @import 'variables';
+@import 'poppins';
 
-// Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+/* centering the navbar text */
+nav .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav .nav-item:hover {
+    background: $primary;
+    color: $body-bg !important;
+}
