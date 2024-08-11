@@ -10,7 +10,7 @@
                     <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
                     <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-github fa-lg"></i></a></li>
                     <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
-                </ul>
+                </ul>   
             </div>
 
             <div class="col mb-3">
