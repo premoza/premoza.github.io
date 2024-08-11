@@ -44,7 +44,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
+<body>  
     <div id="app">
         {{-- Nav --}}
         @include('layouts.nav')
