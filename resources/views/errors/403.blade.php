@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Page Not Found')
+@section('pageTitle', 'Page not found')
 
 @section('content')
 <div class="container">

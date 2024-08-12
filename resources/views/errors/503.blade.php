@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Page Not Found')
+@section('pageTitle', 'Maintenance')
 
 @section('content')
 <div class="container">
     <div class="d-flex justify-content-center 
                 align-items-center">
         <div class="col-md-12 text-center">
-            <h1>404</h1>
-            <h2>Page Not Found</h2>
+            <h1>510</h1>
+            <h2>Maintenance</h2>
             <p>
-                Sorry, the page you are looking
-                for does not exist.
+                Sorry, the server is currently
+                under maintenance.
             </p>
         </div>
     </div>

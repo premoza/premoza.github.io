@@ -29,11 +29,6 @@
     <meta property="og:site_name" content="Premoza" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    {{-- FontAwesome --}}
-    <link rel="stylesheet" href="/assets/font-awesome/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="/assets/font-awesome/css/brands.min.css" />
-    <link rel="stylesheet" href="/assets/font-awesome/css/solid.min.css" />
-
     {{-- Poppins Font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
