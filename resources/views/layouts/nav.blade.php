@@ -16,8 +16,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-            Freight
+            <img src="/assets/premoza/premoza-icon-min.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            Premoza
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
             {{-- Left Side --}}
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -85,9 +85,9 @@
                 @endguest
             </ul>
 
-            <form class="d-flex" role="search" method='get' action='/search'>
+            <form class="d-flex" role="search">
                 <div class="input-group">
-                    <input type="search" class="form-control" name="q" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
                     <button class="btn btn-outline-primary" id="search-addon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>

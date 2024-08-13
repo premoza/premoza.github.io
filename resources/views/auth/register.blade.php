@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Register')
+@section('pageTitle', 'Join Premoza')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-5">
-            <img src="/assets/main/port.png" class="img-fluid">
-            <a class="text-muted" href="https://www.freepik.com/free-vector/port-concept-illustration_18493589.htm#fromView=search&page=1&position=0&uuid=51865418-4a1f-44d2-a031-3a5660de0b10">Image by storyset on Freepik</a>
+            <img src="/assets/premoza/13399753_Work_7.jpg" class="img-fluid">
+            <a class="text-muted" href="https://www.freepik.com/free-vector/business-woman-depressed-stressed-watching-decrease-graph-stock-financial-trade-market-diagram_13399738.htm#fromView=keyword&page=1&position=3&uuid=db50ea3a-7847-4444-8f64-6868808b7682">Image by jcomp on Freepik</a>
         </div>
         <div class="col-md-7 my-md-5">
-            <h1 class="offset-md-2 mb-4">{{ __('Register') }}</h1>
+            <h1 class="offset-md-2 mb-4">{{ __('Join Premoza') }}</h1>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
@@ -37,7 +37,7 @@
 
                     </div>
                 </div>
-
+                
                 <div class="row mb-3">
                     <div class="col-md-8 offset-md-2">
                         <label for="email" class="">{{ __('Your email') }}</label>

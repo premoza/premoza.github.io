@@ -3,9 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite --host",
-        "build": "node_modules/prettier/bin/prettier.cjs ./resources/js --write && vite build && node obfuscate.cjs",
-        "test": "node_modules/prettier/bin/prettier.cjs ./resources/js --write && vite build",
-        "prettier": "node_modules/prettier/bin/prettier.cjs ./resources/js --write"
+        "build": "prettier ./resources/js --write && vite build && node obfuscate.cjs",
+        "test": "prettier ./resources/js --write && vite build",
+        "prettier": "prettier ./resources/js --write"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",

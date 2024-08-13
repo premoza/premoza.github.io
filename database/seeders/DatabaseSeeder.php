@@ -29,6 +29,16 @@ class DatabaseSeeder extends Seeder
 
             User::create([
                 'first_name' => 'John',
+                'last_name' => 'Developer',
+                'email' => 'developer@example.com',
+                'login_method' => 'form',
+                'status' => 'active',
+                'type' => 'developer',
+                'password' => 'developer'
+            ]);
+
+            User::create([
+                'first_name' => 'John',
                 'last_name' => 'Admin',
                 'email' => 'admin@example.com',
                 'login_method' => 'form',
