@@ -3,7 +3,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
             <div class="col mb-3">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <img src="/assets/premoza/premoza-icon-min.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                    <img src="" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
                 </a>
                 <p class="text-body-secondary mx-3">&copy; 2024</p>
                 <ul class="list-unstyled d-flex">

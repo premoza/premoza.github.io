@@ -6,7 +6,7 @@ use Error;
 use Exception;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Premoza extends Authenticatable
+class Freight extends Authenticatable
 {
     protected $encryptable = [
         // User

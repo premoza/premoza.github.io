@@ -14,32 +14,33 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('pageTitle') - Premoza</title>
+    <title>@yield('pageTitle') - Freight</title>
 
     {{-- Icons --}}
-    <link rel="shortcut icon" href="/assets/premoza/premoza-icon-min-round.png">
-    <link rel="apple-touch-icon" href="/assets/premoza/premoza-icon-min-round.png">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!--
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" href="">
+    <link rel="icon" href="" type="image/x-icon">
+    -->
 
     {{-- OpenGraph --}}
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="@yield('pageTitle') - Premoza" />
+    <meta property="og:title" content="@yield('pageTitle') - Freight" />
     <meta property="og:url" content="{{ $canonicalUrl }}/" />
-    <meta property="og:site_name" content="Premoza" />
+    <meta property="og:site_name" content="Freight" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    {{-- Poppins Font --}}
+    {{-- Font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     {{-- Scripts --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>  
+<body>
     <div id="app">
         {{-- Nav --}}
         @include('layouts.nav')
@@ -54,4 +55,5 @@
     </div>
 
 </body>
+
 </html>

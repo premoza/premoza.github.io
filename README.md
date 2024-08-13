@@ -1,8 +1,4 @@
-# premoza
-🚧 under development, contributions are welcome
-
-<img src="demo.png">
-<img src="demo1.png">
+# main
 
 ## Pre-requisites
 - XAMPP or mysql cli

@@ -38,26 +38,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-     /**
-     * Handle a login request to the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function login(Request $request)
-    {
-        $this->validateLogin($request);
-        if (Auth::attempt($this->credentials($request))) {
-            $user = Auth::user();
-            
-            if ($user->type == 'developer') {
-                Auth::logout();
-                return $this->sendFailedLoginResponse($request);
-            }
-
-            return $this->sendLoginResponse($request);
-        }
-        return $this->sendFailedLoginResponse($request);
-    }
 }

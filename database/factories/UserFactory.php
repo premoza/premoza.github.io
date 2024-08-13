@@ -23,7 +23,7 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        $userTypes = ['user', 'developer', 'admin'];
+        $userTypes = ['user', 'admin'];
 
         $type = $this->faker->randomElement($userTypes);
 

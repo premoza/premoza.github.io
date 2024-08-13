@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('login_method')->nullable();
             // active, deactivated
             $table->string('status')->nullable();
-            // user, developer, admin
+            // user account type
             $table->string('type')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
