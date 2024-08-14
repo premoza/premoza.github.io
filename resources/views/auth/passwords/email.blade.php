@@ -3,7 +3,7 @@
 @section('pageTitle', 'Reset Password')
 
 @section('content')
-<div class="container">
+<div class="container full-height d-flex justify-content-center align-items-center">
     <div class="row">
         <div class="col-md-5">
             <img src="/assets/premoza/13399753_Work_7.jpg" class="img-fluid">
@@ -27,8 +27,7 @@
                         <label for="email" class="">{{ __('Your email') }}</label>
 
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                            <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
+                            <input name="email" type="email" placeholder="your@email.com" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
 
                             @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -42,8 +41,8 @@
 
                 <div class="row mb-0">
                     <div class="col-md-4 offset-md-4">
-                        <button type="submit" class="btn btn-primary rounded-pill shadow-lg w-75 p-2">
-                            {{ __('Submit') }} &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+                        <button type="submit" class="btn btn-gradient rounded-pill shadow-lg w-75 p-2 text-white">
+                            {{ __('Submit') }} &nbsp; <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>

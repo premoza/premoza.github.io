@@ -11,7 +11,7 @@
         </div>
         <div class="col-md-7 my-md-5">
             <h1 class="offset-md-2 mb-4">{{ __('Join Premoza') }}</h1>
-            <form method="POST" action="{{ route('login') }}">
+            <form method="POST" action="{{ route('register') }}">
                 @csrf
 
                 <div class="row mb-3">
@@ -37,14 +37,13 @@
 
                     </div>
                 </div>
-                
+
                 <div class="row mb-3">
                     <div class="col-md-8 offset-md-2">
-                        <label for="email" class="">{{ __('Your email') }}</label>
+                        <label for="email" class="">{{ __('Email Address') }}</label>
 
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                            <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" name="email" type="email" placeholder="your@email.com" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
                             @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -59,8 +58,7 @@
                         <label for="password" class="">{{ __('Password') }}</label>
 
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-lock"></i></span>
-                            <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror" aria-describedby="basic-addon2" value="{{ old('password') }}" required autocomplete="new-password">
+                            <input id="password" name="password" placeholder="********" type="password" class="form-control @error('password') is-invalid @enderror" aria-describedby="basic-addon2" value="{{ old('password') }}" required autocomplete="new-password">
                             @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -88,8 +86,8 @@
 
                 <div class="row mb-0">
                     <div class="col-md-4 offset-md-4">
-                        <button type="submit" class="btn btn-primary rounded-pill shadow-lg w-75 p-2">
-                            {{ __('Register') }} &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+                        <button type="submit" class="btn btn-gradient rounded-pill shadow-lg w-75 p-2 text-white">
+                            {{ __('Register') }} &nbsp; <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>

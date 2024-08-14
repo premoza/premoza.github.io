@@ -24,3 +24,9 @@ nav .nav-item:hover {
     background: $primary;
     color: $body-bg !important;
 }
+
+/* gradient button */
+.btn-gradient {
+    background: linear-gradient(45deg, #7743DB, #4d3083);
+    transition: all 0.3s ease; 
+}

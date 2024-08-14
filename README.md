@@ -1,9 +1,6 @@
 # premoza
 🚧 under development, contributions are welcome
 
-<img src="demo.png">
-<img src="demo1.png">
-
 ## Pre-requisites
 - XAMPP or mysql cli
 - Node.js v20.^
