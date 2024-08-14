@@ -3,7 +3,7 @@
 @section('pageTitle', 'Login')
 
 @section('content')
-<div class="container">
+<div class="container full-height d-flex justify-content-center align-items-center">
     <div class="row">
         <div class="col-md-5">
             <img src="/assets/premoza/13399753_Work_7.jpg" class="img-fluid">
@@ -16,11 +16,10 @@
 
                 <div class="row mb-3">
                     <div class="col-md-8 offset-md-2">
-                        <label for="email" class="">{{ __('Your email') }}</label>
+                        <label for="email" class="">{{ __('Email Address') }}</label>
 
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                            <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
+                        <div class="input-group form-label-group">
+                            <input id="email" name="email" placeholder="your@email.com" type="email" class="form-control @error('email') is-invalid @enderror" aria-describedby="basic-addon1" value="{{ old('email') }}" required autocomplete="email">
                             @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -35,8 +34,7 @@
                         <label for="password" class="">{{ __('Password') }}</label>
 
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-lock"></i></span>
-                            <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror" aria-describedby="basic-addon2" value="{{ old('password') }}" required autocomplete="current-password">
+                            <input id="password" name="password" placeholder="********" type="password" class="form-control @error('password') is-invalid @enderror" aria-describedby="basic-addon2" value="{{ old('password') }}" required autocomplete="current-password">
                             @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -49,11 +47,9 @@
                 <div class="row mb-4">
                     <div class="col-md-8 offset-md-2">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" checked>
-                                <label class="form-check-label" for="remember">
-                                    {{ __('Remember Me') }}
-                                </label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" name="remember" id="remember" checked>
+                                <label class="form-check-label" for="remember">{{ __('Remember Me') }}</label>
                             </div>
                             <a class="btn btn-link" href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
@@ -64,8 +60,8 @@
 
                 <div class="row mb-0">
                     <div class="col-md-4 offset-md-4">
-                        <button type="submit" class="btn btn-primary rounded-pill shadow-lg w-75 p-2">
-                            {{ __('Login') }} &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+                        <button type="submit" class="btn btn-gradient rounded-pill shadow-lg w-75 p-2 text-white">
+                            {{ __('Login') }} &nbsp; <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>

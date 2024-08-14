@@ -15,7 +15,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="/assets/premoza/premoza-icon-min.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
             Premoza
         </a>
@@ -27,7 +27,7 @@
             {{-- Left Side --}}
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -68,7 +68,7 @@
                 @else
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
+                        {{ Auth::user()->first_name }}
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
