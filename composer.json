@@ -2,6 +2,7 @@
     "name": "premoza/premoza",
     "type": "project",
     "description": "",
+    "license": "CC-BY-NC-4.0",
     "require": {
         "php": "^8.2",
         "components/font-awesome": "^6.5",
