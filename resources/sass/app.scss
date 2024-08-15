@@ -28,5 +28,25 @@ nav .nav-item:hover {
 /* gradient button */
 .btn-gradient {
     background: linear-gradient(45deg, #7743DB, #4d3083);
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+}
+
+/*
+ * action button
+ */
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.fab:hover {
+    transition: all 0.3s ease-in-out;
 }
