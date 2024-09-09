@@ -52,7 +52,7 @@ const Showcase = () => (
           <h1>Real estate e-commerce platform.</h1>
         </div>
         <p className="text">
-          A cutting-edge real estate e-commerce platform, powered by Solana and Starknet, allowing users to buy, rent, or sell properties and book hotels worldwide with a single click.
+          A cutting-edge real estate e-commerce platform, powered by Solana, allowing users to buy, rent, or sell properties and book hotels worldwide with a single click.
         </p>
         <div className="cta">
           <a href="#" className="btn">Launch App</a>
