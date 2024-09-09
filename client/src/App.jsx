@@ -33,7 +33,7 @@ const Header = () => (
           <li><a href="#">Blog</a></li>
           <li><a href="#">Roadmap</a></li>
           <li><a href="#">Team</a></li>
-          <li><a href="#" className="btn">Github</a></li>
+          <li><a href="https://github.com/premoza" className="btn">Github</a></li>
         </ul>
       </nav>
       <div className="hamburger-menu">
