@@ -54,9 +54,7 @@ const Showcase = () => (
         <p className="text">
           A cutting-edge real estate e-commerce platform, powered by Solana, allowing users to buy, rent, or sell properties and book hotels worldwide with a single click.
         </p>
-        <div className="cta">
-          <a href="#" className="btn">Launch App</a>
-        </div>
+       <div className="launchlist-widget" data-key-id="c1VU8y" data-height="180px"></div>
       </div>
       <div className="right">
         <img src={`/assets/person.png`} alt="Person" className="person" />
