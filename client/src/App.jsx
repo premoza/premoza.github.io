@@ -61,7 +61,13 @@ const Showcase = () => (
     </div>
   </div>
 );
+    
+const LaunchList = () => (
+<div class="launchlist-widget" data-key-id="c1VU8y" data-height="180px"></div>
 
+    
+);
+    
 const BottomArea = ({ toggleDarkMode }) => (
   <div className="bottom-area">
     <div className="container">
