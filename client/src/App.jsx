@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import './launchwidget.jsx'
+import LaunchListWidget from './launchwidget.jsx';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
