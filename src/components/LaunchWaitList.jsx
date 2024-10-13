@@ -27,7 +27,7 @@ const LaunchlistForm = () => {
           type="text"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Enter your name"
+          placeholder="Ente Full name"
           className="form-input"
         />
         <input
@@ -35,7 +35,7 @@ const LaunchlistForm = () => {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Email requird"
+          placeholder="Enter Email Address"
           className="form-input"
         />
         <button type="submit" className="form-button">Sign Up</button>
