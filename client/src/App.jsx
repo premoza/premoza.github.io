@@ -1,83 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import LaunchListWidget from './launchwidget.jsx';
+import Companies from "./components/Companies/Companies";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Residencies from "./components/Residencies/Residencies";
+import "./App.css";
+import Value from "./components/Value/Value";
+import Contact from "./components/Contact/Contact";
+import GetStarted from "./components/GetStarted/GetStarted";
+import Footer from "./components/Footer/Footer";
+
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <main>
-      <div className={`big-wrapper ${darkMode ? 'dark' : 'light'}`}>
-        <img src={`/assets/shape.png`} alt="Shape" className="shape" />
-        <Header />
-        <Showcase />
-        <BottomArea toggleDarkMode={toggleDarkMode} />
-      </div>
-    </main>
+   <div className="app">
+    <div>
+      <div className="white-gradient"/> 
+      <Header/>
+    <Hero/>
+    </div>
+   
+    <Companies/>
+    <Residencies/>
+    <Value/>
+   
+    <GetStarted/>
+    <Footer/>
+   </div>
   );
 }
-
-const Header = () => (
-  <header>
-    <div className="container">
-      <div className="logo">
-        <img src={`/assets/logo.png`} alt="Logo" />
-        <h3>Premoza</h3>
-      </div>
-      <nav className="links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Roadmap</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="https://github.com/premoza" className="btn">Github</a></li>
-        </ul>
-      </nav>
-      <div className="hamburger-menu">
-        <div className="bar"></div>
-      </div>
-    </div>
-  </header>
-);
-
-const Showcase = () => (
-  <div className="showcase-area">
-    <div className="container">
-      <div className="left">
-        <div className="big-title">
-          <h1>Blockchain powered,</h1>
-          <h1>Real estate e-commerce platform.</h1>
-        </div>
-        <p className="text">
-          A cutting-edge real estate e-commerce platform, powered by Solana, allowing users to buy, rent, or sell properties and book hotels worldwide with a single click.
-        </p>
-      <LaunchListWidget /> 
-      <div className="right">
-        <img src={`/assets/person.png`} alt="Person" className="person" />
-      </div>
-    </div>
-  </div>
-);
-    
-const LaunchListWidget = () => (
-<div class="launchlist-widget" data-key-id="c1VU8y" data-height="180px">
-</div>
-
-    
-);
-    
-const BottomArea = ({ toggleDarkMode }) => (
-  <div className="bottom-area">
-    <div className="container">
-      <button className="toggle-btn" onClick={toggleDarkMode}>
-        <i className="far fa-moon"></i>
-        <i className="far fa-sun"></i>
-      </button>
-    </div>
-  </div>
-);
 
 export default App;
