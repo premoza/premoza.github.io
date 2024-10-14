@@ -5,7 +5,7 @@ const data = [
     icon: <HiShieldCheck/>,
     heading: "Buy and Sell Properties",
     detail:
-      "Buying and Sales of real estate property made easy, we connect Proprty developers with their potential Customers Onchain.",
+      "Buying and Sales of real estate property made easy, we connect Property developers with their potential Customers Onchain.",
   },
   
   {
