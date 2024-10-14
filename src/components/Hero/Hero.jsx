@@ -23,7 +23,7 @@ const Hero = () => {
               Blockchain Powered<br />
           
               Real estate e-commerce platform.
-              <br /> Property
+              <br />
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
