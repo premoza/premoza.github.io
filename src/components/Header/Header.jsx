@@ -23,7 +23,7 @@ const Header = () => {
           <a href="#contact-us">Contact US</a>
           <a href="#getStarted">Get Started</a>
           <button className="button">
-            <a href="#contact-us">Contact Us</a>
+            <a href="#contact-us">Launch App</a>
           </button>
         </div>
         {/* </OutsideClickHandler> */}
